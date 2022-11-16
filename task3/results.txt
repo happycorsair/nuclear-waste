@@ -1,0 +1,305 @@
+CMake Warning at /opt/KasperskyOS-Community-Edition-1.1.0.356/toolchain/share/cmake/Modules/platform/image2.cmake:303 (find_package):
+  By not providing "Findblob_container.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "blob_container", but CMake did not find one.
+
+  Could not find a package configuration file provided by "blob_container"
+  with any of the following names:
+
+    blob_containerConfig.cmake
+    blob_container-config.cmake
+
+  Add the installation prefix of "blob_container" to CMAKE_PREFIX_PATH or set
+  "blob_container_DIR" to a directory containing one of the above files.  If
+  "blob_container" provides a separate development package or SDK, be sure it
+  has been installed.
+Call Stack (most recent call first):
+  /opt/KasperskyOS-Community-Edition-1.1.0.356/toolchain/share/cmake/Modules/platform/image.cmake:617 (__init_configure_yaml_and_security_files)
+  /opt/KasperskyOS-Community-Edition-1.1.0.356/toolchain/share/cmake/Modules/platform/image.cmake:1455 (__build_kos_image)
+  einit/CMakeLists.txt:88 (build_kos_hw_image)
+
+
+CMake Warning at /opt/KasperskyOS-Community-Edition-1.1.0.356/toolchain/share/cmake/Modules/platform/image2.cmake:303 (find_package):
+  By not providing "Findblob_container.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "blob_container", but CMake did not find one.-- Building image without aboot files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/mqtt_subscriber/build
+ blob_container-config.cmake
+
+  Add the installation prefix of "blob_container" to CMAKE_PREFIX_PATH or set
+  "blob_container_DIR" to a directory containing one of the above files.  If
+  "blob_container" provides a separate development package or SDK, be sure it
+  has been installed.
+Call Stack (most recent call first):
+  /opt/KasperskyOS-Community-Edition-1.1.0.356/toolchain/share/cmake/Modules/platform/image.cmake:605 (__init_configure_yaml_and_security_files)
+  /opt/KasperskyOS-Community-Edition-1.1.0.356/toolchain/share/cmake/Modules/platform/image.cmake:1449 (__build_kos_image)
+  einit/CMakeLists.txt:97 (build_kos_qemu_image)
+
+
+[  6%] Built target EinitQemu-edl
+[ 25%] Built target subscriber_edl_files
+Consolidate compiler generated dependencies of target Subscriber
+[ 43%] Built target Subscriber
+Consolidate compiler generated dependencies of target EinitQemu
+[ 62%] Built target EinitQemu
+[ 62%] Built target EinitQemu-kss-entities-built
+[ 68%] Built target EinitQemu-kss-makekss-output
+[ 68%] Built target ramdisk0.img
+[ 68%] Built target sdcard0.img
+[ 93%] Built target kos-qemu-image
+[100%] Running QEMU with KasperskyOS image...
+WARNING: Image format was not specified for 'sdcard0.img' and probing guessed raw.
+         Automatically detecting the format is dangerous for raw images, write operations on block 0 will be restricted.
+         Specify the 'raw' format explicitly to remove the restrictions.
+ALSA lib pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+alsa: Could not initialize DAC
+alsa: Failed to open `default':
+alsa: Reason: No such file or directory
+ALSA lib pcm_dmix.c:1108:(snd_pcm_dmix_open) unable to open slave
+alsa: Could not initialize DAC
+alsa: Failed to open `default':
+alsa: Reason: No such file or directory
+audio: Failed to create voice `lm4549.out'
+[BOOT ] Starting...
+[BOOT ] Setting up arch flags...
+[BOOT ] Preparing memory...
+[BOOT ] Preparing Flattened Device Tree info...
+[BOOT ] Preparing loader info...
+[BOOT ] Preparing ROMFS...
+[BOOT ] Preparing KasperskyOS kernel...
+[BOOT ] Preparing trampoline to kernel...
+[BOOT ] Preparing page table...
+[BOOT ] Preparing modules...
+[BOOT ] Freeing loader memory...
+[BOOT ] Dump physical memory map
+[BOOT ] Starting KasperskyOS...
+[HAL  ] Exceptions initialized
+
+Loading:
+ _  __                             _           ___  ____
+| |/ /__ _ ___ _ __   ___ _ __ ___| | ___   _ / _ \/ ___|
+| ' // _` / __| '_ \ / _ \ '__/ __| |/ / | | | | | \___ \
+| . \ (_| \__ \ |_) |  __/ |  \__ \   <| |_| | |_| |___) |
+|_|\_\__,_|___/ .__/ \___|_|  |___/_|\_\\__, |\___/|____/
+              |_|                       |___/
+
+
+Built on:   Oct 12 2022 01:25:33
+Board:      vexpress_qemu
+SoC:        v2pca15
+ARCH:       arm64
+Git hash:   a110356d7f99c955756f68d82baac26681918245-dirty
+
+
+Found CPU: ARMv8
+System control register:
+	Instruction cache: enabled
+	Data cache: enabled
+[HAL  ] Internal PFN-allocator initiated.
+[HAL  ] Private Area begin : 0x0000000000001000
+[HAL  ] Private Area end : 0x00007f7fffffffff
+[HAL  ] Private Area size : 0x00007f7ffffff000
+[HAL  ] Shared Area begin : 0xffff808000000000
+[HAL  ] Shared Area end  : 0xffffffffffffffff
+[HAL  ] Shared Area size : 0x00007f8000000000
+[HAL  ] PTE Table Area begin : 0xffff800000000000
+[HAL  ] PTE Table Area end : 0xffff807fffffffff
+[HAL  ] PTE Table Area size : 0x0000008000000000
+[HAL  ] Kernel Area begin : 0xffff808000000000
+[HAL  ] Kernel Area end  : 0xfffffffffcffffff
+[HAL  ] Kernel Area size : 0x00007f7ffd000000
+[HAL  ] Internal Area begin : 0xffffffffff400000
+[HAL  ] Internal Area end : 0xffffffffffffffff
+[HAL  ] Internal Area size : 0x0000000000c00000
+[HAL  ] Temporary Area begin : 0xffffffffff400000
+[HAL  ] Temporary Area end : 0xffffffffff485fff
+[HAL  ] Temporary Area size : 0x0000000000086000
+[HAL  ] Periphery Area begin : 0xffffffffff800000
+[HAL  ] Periphery Area end : 0xffffffffffffffff
+[HAL  ] Periphery Area size : 0x0000000000800000
+[HAL  ] cpu #0 - 1007MHz
+[HAL  ] Cpu initialized.
+[HAL  ] Temporary area initialized.
+[HAL  ] SoC area mapped. begin: 0xffffffffff800000, size: 0x7000
+[HAL  ] Mmu initialized.
+[HAL  ] WXN protection enabled.
+[HAL  ] Zero space initialized.
+[HAL  ] Found GICv1 with 160 interrupts.
+[HAL  ] Interrupts initiated.
+[HAL  ] Generic Timer found.
+[HAL  ] Bootstrap Processor's ID - 0
+CPU0 - boot strap processor
+CPU1 - ordinary processor
+CPU2 - ordinary processor
+CPU3 - ordinary processor
+[HAL  ] Hardware Abstraction Layer successfully initialized.
+[INIT ] Starting core...
+[MM   ] Max pfns         : 0x0000001000000000
+[MM   ] Max kernel VAD   : 0x0000100000000000
+[MM   ] Max user VAD     : 0x0000400000000000
+[MM   ] Max buddy order  : 0x0000000000000010
+[MM   ] PageInfo size    : 0x0000000000000020
+[MM   ] Pfn DB begin     : 0xffffc00005000000
+[MM   ] Pfn DB end       : 0xffffc40004ffffff
+[MM   ] Pfn DB size      : 0x0000040000000000
+[MM   ] Kmalloc begin    : 0xffffc40005000000
+[MM   ] Kmalloc end      : 0xffffc40008ffffff
+[MM   ] Kmalloc size     : 0x0000000004000000
+[MM   ] Kernel VAD begin : 0xffff808000000000
+[MM   ] Kernel VAD end   : 0xfffffffffcffffff
+[MM   ] Kernel VAD size  : 0x00007f7ffd000000
+[MM   ] User VAD begin   : 0x0000000000001000
+[MM   ] User VAD end     : 0x00007f7fffffffff
+[MM   ] User VAD size    : 0x00007f7ffffff000
+[MM   ] PFN range #01[__x] begin : 0x0000000000080000
+[MM   ] PFN range #01[__x] end : 0x000000000008004b
+[MM   ] PFN range #01[__x] size : 0x000000000000004c
+[MM   ] PFN range #02[r__] begin : 0x000000000008004c
+[MM   ] PFN range #02[r__] end : 0x0000000000080055
+[MM   ] PFN range #02[r__] size : 0x000000000000000a
+[MM   ] PFN range #03[___] begin : 0x0000000000080056
+[MM   ] PFN range #03[___] end : 0x0000000000080057
+[MM   ] PFN range #03[___] size : 0x0000000000000002
+[MM   ] PFN range #04[rw_] begin : 0x0000000000080058
+[MM   ] PFN range #04[rw_] end : 0x00000000000800be
+[MM   ] PFN range #04[rw_] size : 0x0000000000000067
+[MM   ] PFN range #05[rw_] begin : 0x00000000000800bf
+[MM   ] PFN range #05[rw_] end : 0x00000000000800c9
+[MM   ] PFN range #05[rw_] size : 0x000000000000000b
+[MM   ] PFN range #06[rwx] begin : 0x00000000000800ca
+[MM   ] PFN range #06[rwx] end : 0x00000000000801c8
+[MM   ] PFN range #06[rwx] size : 0x00000000000000ff
+[MM   ] PFN range #07[rwx] begin : 0x00000000000801c9
+[MM   ] PFN range #07[rwx] end : 0x000000000008200b
+[MM   ] PFN range #07[rwx] size : 0x0000000000001e43
+[MM   ] PFN range #08[__x] begin : 0x000000000008200c
+[MM   ] PFN range #08[__x] end : 0x000000000008200c
+[MM   ] PFN range #08[__x] size : 0x0000000000000001
+[MM   ] PFN range #09[rwx] begin : 0x000000000008200d
+[MM   ] PFN range #09[rwx] end : 0x000000000008207f
+[MM   ] PFN range #09[rwx] size : 0x0000000000000073
+[MM   ] PFN range #10[rwx] begin : 0x0000000000082080
+[MM   ] PFN range #10[rwx] end : 0x000000000008dfdd
+[MM   ] PFN range #10[rwx] size : 0x000000000000bf5e
+[MM   ] PFN range #11[rwx] begin : 0x000000000008dfde
+[MM   ] PFN range #11[rwx] end : 0x00000000000dffff
+[MM   ] PFN range #11[rwx] size : 0x0000000000052022
+[MM   ] Main range mapped begin : 0xffffc00006000000
+[MM   ] Main range mapped end : 0xffffc00006bfffff
+[MM   ] Main range mapped size : 0x0000000000c00000
+[MM   ] PFN DB size: 12288 KB
+[MM   ] PFN database created.
+[MM   ] Add PFN range begin : 0x0000000080dcf000
+[MM   ] Add PFN range end : 0x000000008200bfff
+[MM   ] Add PFN range size : 0x000000000123d000
+[MM   ] Add PFN range begin : 0x000000008200d000
+[MM   ] Add PFN range end : 0x000000008207ffff
+[MM   ] Add PFN range size : 0x0000000000073000
+[MM   ] Add PFN range begin : 0x000000008dfde000
+[MM   ] Add PFN range end : 0x00000000dfffffff
+[MM   ] Add PFN range size : 0x0000000052022000
+[MM   ] Atomic buddy object created (8 MB).
+[MM   ] Atomic PFN allocator initialized.
+[MM   ] kalloc allocator created.
+[MM   ] kmalloc/kfree initialized.
+[MM   ] Memory Manager successfully initialized.
+[PROF ] Profiler statistics initialized.
+[VMM  ] #PF handler was installed.
+[SMP  ] Initializing per-CPU areas...
+[SMP  ] per-CPU area size: 8320
+[SMP  ] full per-CPU areas size: 36864
+[UID  ] Uid allocator initialized.
+[SID  ] Sid allocator initialized.
+[IO   ] Initialize MMIO subsystem.
+[IO   ] Initialize DMA subsystem.
+[IO   ] Hardware interrupts successfully initialized.
+[IO   ] Resources registry initialized.
+[VMM  ] System address space initialized.
+[VMM  ] Internal VMM areas initialized.
+[TASK ] Task infrastructure initialized.
+[SMP  ] Idle thread for CPU #0 created.
+[SMP  ] Idle thread for CPU #1 created.
+[SMP  ] Idle thread for CPU #2 created.
+[SMP  ] Idle thread for CPU #3 created.
+[TASK ] Scheduler interrupts initialized.
+[TASK ] GSI page initialized.
+[HAL  ] cpu #1 - 1008MHz
+[HAL  ] cpu #3 - 1007MHz
+[HAL  ] cpu #2 - 1008MHz
+[SMP  ] CPU #1 - boostrapped.
+[SMP  ] CPU #3 - boostrapped.
+[SMP  ] CPU #2 - boostrapped.
+[PROF ] Profiler initialized.
+[TASK ] Multitasking infrastructure initialized.
+[TIME ] Time infrastructure initialized.
+[ROFS ] Files: 12, size: 200663040 (0x0bf5e000).
+[ROFS ] File #00: einit            - size:   775296 (0x000bd480)
+[ROFS ] File #01: ntpd             - size:  1470904 (0x001671b8)
+[ROFS ] File #02: sdcard0.img      - size: 52428800 (0x03200000)
+[ROFS ] File #03: ramdisk0.img     - size: 134217728 (0x08000000)
+[ROFS ] File #04: Subscriber       - size:  2815424 (0x002af5c0)
+[ROFS ] File #05: VfsNet           - size:  3732544 (0x0038f440)
+[ROFS ] File #06: dhcpcd_entity    - size:  1108304 (0x0010e950)
+[ROFS ] File #07: VfsRamFs         - size:  1150536 (0x00118e48)
+[ROFS ] File #08: bsp_qemu         - size:   589344 (0x0008fe20)
+[ROFS ] File #09: gpio_qemu        - size:   657680 (0x000a0910)
+[ROFS ] File #10: ramdisk          - size:   658112 (0x000a0ac0)
+[ROFS ] File #11: ksm.module       - size:  1035264 (0x000fcc00)
+[AUDIT] Starting core audit...
+[VLOG ] Virtual logging subsystem initialized.
+[VMM  ] Virtual Memory Manager service initialized.
+[IO   ] I/O subsystem successfully initialized.
+[FS   ] File System Manager successfully initialized.
+[XHCI ] XHCIDBG service initialized.
+[CM   ] Connection Manager successfully initialized.
+[KSM  ] Module: 'ksm.module' loaded.
+[KSM  ] Audit log created.
+[KSM  ] Module: 'ksm.module' initialized.
+[KSM  ] Server: 'kl.core.Core' executed.
+[KSM  ] Security system successfully initialized.
+[INIT ] Starting 'Einit' ...
+[INIT ] Starting system worker.
+[2022-11-16T15:11:56.722][Info][kl.drivers.BSP][33:34][BSPSR] Server starting.
+[2022-11-16T15:11:56.726][Info][kl.drivers.RAMDisk][21:22][BLKDEVSR] Ramdisk server start.
+[2022-11-16T15:11:58.691][Info][kl.VfsNet][45:46][NS] Can't connect with Name Server.
+[Info][kl.VfsNet][crt0-common.c:init_vfs_backend:567][CRT0] _vfs_fs = _vfs_net = env(server:kl.VfsNet)
+entropy: ready
+[VfsNet] started
+[2022-11-16T15:11:59.393][Info][kl.VfsRamFs][39:40][NS] Can't connect with Name Server.
+[2022-11-16T15:11:59.395][Info][kl.VfsRamFs][39:40][BLKDEVCL] Start client initialization.
+[2022-11-16T15:11:59.396][Info][kl.VfsRamFs][39:40][BLKDEVCL] Discovered static channel to server 'kl.drivers.RAMDisk', endpoint 'kl.drivers.RAMDisk.ramdisk'.
+[2022-11-16T15:11:59.397][Info][kl.VfsRamFs][39:40][BLKDEVCL] Connection with server 'kl.drivers.RAMDisk' established.
+[2022-11-16T15:12:00.697][Info][kl.drivers.RAMDisk][21:22][BLKPART] Add MBR/EBR partition 'ramdisk0_p0', type: 0x83, offset:   2048, size: 260096 (in sectors)
+[2022-11-16T15:12:00.698][Error][kl.drivers.RAMDisk][21:22][BLKPART] MBR is not valid, found signature = 0x0
+[2022-11-16T15:12:00.698][Error][kl.drivers.RAMDisk][21:22][BLKPART] MBR not found on disk 'ramdisk1'
+[2022-11-16T15:12:00.700][Info][kl.drivers.RAMDisk][21:22][BLKDEVSR] Port 'ramdisk0' successfully registered.
+[2022-11-16T15:12:00.701][Info][kl.drivers.RAMDisk][21:22][BLKDEVSR] Port 'ramdisk1' successfully registered.
+[2022-11-16T15:12:00.701][Info][kl.drivers.RAMDisk][21:22][BLKDEVSR] Port 'ramdisk0_p0' successfully registered.
+[2022-11-16T15:12:01.129][Info][kl.VfsRamFs][39:40][NS] Can't connect with Name Server.
+[Info][kl.VfsRamFs][crt0-common.c:init_vfs_backend:580][CRT0] _vfs_fs = env(server:kl.VfsRamFs)
+[VfsRamFs] started
+[VfsRamFs] Successfully mounted devfs, /dev, devfs
+[Info][mosquitto.Subscriber][crt0-common.c:init_vfs_backend:573][CRT0] _vfs_fs = env(client:kl.VfsRamFs), _vfs_net = env(client:kl.VfsNet)
+[Info][kl.Ntpd][crt0-common.c:init_vfs_backend:573][CRT0] _vfs_fs = env(client:kl.VfsRamFs), _vfs_net = env(client:kl.VfsNet)
+[Info][kl.rump.Dhcpcd][crt0-common.c:init_vfs_backend:573][CRT0] _vfs_fs = env(client{fs->net}:kl.VfsRamFs), _vfs_net = env(client:kl.VfsNet)
+dhcpcd-9.4.1 starting
+no interfaces have a carrier
+en0: waiting for carrier
+en0: carrier unknown, assuming up
+en0: soliciting a DHCP lease
+en0: offered 10.0.2.15 from 10.0.2.2
+en0: leased 10.0.2.15 for 86400 seconds
+dhcp_writefile: /var/db/dhcpcd/en0.lease: No such file or directory
+en0: adding route to 10.0.2.0/24
+en0: adding default route via 10.0.2.2
+[Subscriber] Connecting to MQTT Broker with address 10.0.2.2 and port 1883
+[Subscriber] Subscriber connected with code 0
+[Subscriber] Subscription succeeded.
+[Subscriber] Got message with topic: my/awesome/topic, payload: hello
+qemu-system-aarch64: terminating on signal 2
+make[3]: *** [einit/CMakeFiles/sim.dir/build.make:71: einit/CMakeFiles/sim] Interrupt
+make[2]: *** [CMakeFiles/Makefile2:514: einit/CMakeFiles/sim.dir/all] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:521: einit/CMakeFiles/sim.dir/rule] Interrupt
+make: *** [Makefile:351: sim] Interrupt
