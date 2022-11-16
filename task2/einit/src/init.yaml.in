@@ -1,0 +1,6 @@
+entities:
+
+- name: hello.Hello
+@INIT_Hello_ENTITY_CONNECTIONS@
+
+@INIT_EXTERNAL_ENTITIES@

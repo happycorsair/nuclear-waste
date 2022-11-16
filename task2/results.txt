@@ -1,0 +1,285 @@
+-- Cross compiling to: KOS-GNU-static 1.1.0.356
+-- Processor: aarch64
+-- Compiler: GCC
+-- CMake generates Unix Makefiles
+-- IMAGE_BINARY_DIR_BIN: /workspace/hello/build/einit
+CMake Warning at /opt/KasperskyOS-Community-Edition-1.1.0.356/toolchain/share/cmake/Modules/platform/image2.cmake:303 (find_package):
+  By not providing "Findblob_container.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "blob_container", but CMake did not find one.
+
+  Could not find a package configuration file provided by "blob_container"
+  with any of the following names:
+
+    blob_containerConfig.cmake
+    blob_container-config.cmake
+
+  Add the installation prefix of "blob_container" to CMAKE_PREFIX_PATH or set
+  "blob_container_DIR" to a directory containing one of the above files.  If
+  "blob_container" provides a separate development package or SDK, be sure it
+  has been installed.
+Call Stack (most recent call first):
+  /opt/KasperskyOS-Community-Edition-1.1.0.356/toolchain/share/cmake/Modules/platform/image.cmake:617 (__init_configure_yaml_and_security_files)
+  /opt/KasperskyOS-Community-Edition-1.1.0.356/toolchain/share/cmake/Modules/platform/image.cmake:1455 (__build_kos_image)
+  einit/CMakeLists.txt:14 (build_kos_hw_image)
+
+
+-- Building image without aboot files
+-- IMAGE_BINARY_DIR_BIN: /workspace/hello/build/einit
+CMake Warning at /opt/KasperskyOS-Community-Edition-1.1.0.356/toolchain/share/cmake/Modules/platform/image2.cmake:303 (find_package):
+  By not providing "Findblob_container.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "blob_container", but CMake did not find one.
+
+  Could not find a package configuration file provided by "blob_container"
+  with any of the following names:
+
+    blob_containerConfig.cmake
+    blob_container-config.cmake
+
+  Add the installation prefix of "blob_container" to CMAKE_PREFIX_PATH or set
+  "blob_container_DIR" to a directory containing one of the above files.  If
+  "blob_container" provides a separate development package or SDK, be sure it
+  has been installed.
+Call Stack (most recent call first):
+  /opt/KasperskyOS-Community-Edition-1.1.0.356/toolchain/share/cmake/Modules/platform/image.cmake:605 (__init_configure_yaml_and_security_files)
+  /opt/KasperskyOS-Community-Edition-1.1.0.356/toolchain/share/cmake/Modules/platform/image.cmake:1449 (__build_kos_image)
+  einit/CMakeLists.txt:21 (build_kos_qemu_image)
+
+
+-- Building image without aboot files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/hello/build
+[  7%] Built target EinitQemu-edl
+[ 30%] Built target hello_edl_files
+Consolidate compiler generated dependencies of target Hello
+[ 46%] Built target Hello
+Consolidate compiler generated dependencies of target EinitQemu
+[ 69%] Built target EinitQemu
+[ 69%] Built target EinitQemu-kss-entities-built
+[ 76%] Built target EinitQemu-kss-makekss-output
+[ 92%] Built target kos-qemu-image
+[100%] Running QEMU with KasperskyOS image...
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5047:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM default
+alsa: Could not initialize DAC
+alsa: Failed to open `default':
+alsa: Reason: No such file or directory
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4568:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5047:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM default
+alsa: Could not initialize DAC
+alsa: Failed to open `default':
+alsa: Reason: No such file or directory
+audio: Failed to create voice `lm4549.out'
+[BOOT ] Starting...
+[BOOT ] Setting up arch flags...
+[BOOT ] Preparing memory...
+[BOOT ] Preparing Flattened Device Tree info...
+[BOOT ] Preparing loader info...
+[BOOT ] Preparing ROMFS...
+[BOOT ] Preparing KasperskyOS kernel...
+[BOOT ] Preparing trampoline to kernel...
+[BOOT ] Preparing page table...
+[BOOT ] Preparing modules...
+[BOOT ] Freeing loader memory...
+[BOOT ] Dump physical memory map
+[BOOT ] Starting KasperskyOS...
+[HAL  ] Exceptions initialized
+
+Loading:
+ _  __                             _           ___  ____
+| |/ /__ _ ___ _ __   ___ _ __ ___| | ___   _ / _ \/ ___|
+| ' // _` / __| '_ \ / _ \ '__/ __| |/ / | | | | | \___ \
+| . \ (_| \__ \ |_) |  __/ |  \__ \   <| |_| | |_| |___) |
+|_|\_\__,_|___/ .__/ \___|_|  |___/_|\_\\__, |\___/|____/
+              |_|                       |___/
+
+
+Built on:   Oct 12 2022 01:25:33
+Board:      vexpress_qemu
+SoC:        v2pca15
+ARCH:       arm64
+Git hash:   a110356d7f99c955756f68d82baac26681918245-dirty
+
+
+Found CPU: ARMv8
+System control register:
+	Instruction cache: enabled
+	Data cache: enabled
+[HAL  ] Internal PFN-allocator initiated.
+[HAL  ] Private Area begin : 0x0000000000001000
+[HAL  ] Private Area end : 0x00007f7fffffffff
+[HAL  ] Private Area size : 0x00007f7ffffff000
+[HAL  ] Shared Area begin : 0xffff808000000000
+[HAL  ] Shared Area end  : 0xffffffffffffffff
+[HAL  ] Shared Area size : 0x00007f8000000000
+[HAL  ] PTE Table Area begin : 0xffff800000000000
+[HAL  ] PTE Table Area end : 0xffff807fffffffff
+[HAL  ] PTE Table Area size : 0x0000008000000000
+[HAL  ] Kernel Area begin : 0xffff808000000000
+[HAL  ] Kernel Area end  : 0xfffffffffcffffff
+[HAL  ] Kernel Area size : 0x00007f7ffd000000
+[HAL  ] Internal Area begin : 0xffffffffff400000
+[HAL  ] Internal Area end : 0xffffffffffffffff
+[HAL  ] Internal Area size : 0x0000000000c00000
+[HAL  ] Temporary Area begin : 0xffffffffff400000
+[HAL  ] Temporary Area end : 0xffffffffff485fff
+[HAL  ] Temporary Area size : 0x0000000000086000
+[HAL  ] Periphery Area begin : 0xffffffffff800000
+[HAL  ] Periphery Area end : 0xffffffffffffffff
+[HAL  ] Periphery Area size : 0x0000000000800000
+[HAL  ] cpu #0 - 1007MHz
+[HAL  ] Cpu initialized.
+[HAL  ] Temporary area initialized.
+[HAL  ] SoC area mapped. begin: 0xffffffffff800000, size: 0x7000
+[HAL  ] Mmu initialized.
+[HAL  ] WXN protection enabled.
+[HAL  ] Zero space initialized.
+[HAL  ] Found GICv1 with 160 interrupts.
+[HAL  ] Interrupts initiated.
+[HAL  ] Generic Timer found.
+[HAL  ] Bootstrap Processor's ID - 0
+CPU0 - boot strap processor
+CPU1 - ordinary processor
+CPU2 - ordinary processor
+CPU3 - ordinary processor
+[HAL  ] Hardware Abstraction Layer successfully initialized.
+[INIT ] Starting core...
+[MM   ] Max pfns         : 0x0000001000000000
+[MM   ] Max kernel VAD   : 0x0000100000000000
+[MM   ] Max user VAD     : 0x0000400000000000
+[MM   ] Max buddy order  : 0x0000000000000010
+[MM   ] PageInfo size    : 0x0000000000000020
+[MM   ] Pfn DB begin     : 0xffffc00005000000
+[MM   ] Pfn DB end       : 0xffffc40004ffffff
+[MM   ] Pfn DB size      : 0x0000040000000000
+[MM   ] Kmalloc begin    : 0xffffc40005000000
+[MM   ] Kmalloc end      : 0xffffc40008ffffff
+[MM   ] Kmalloc size     : 0x0000000004000000
+[MM   ] Kernel VAD begin : 0xffff808000000000
+[MM   ] Kernel VAD end   : 0xfffffffffcffffff
+[MM   ] Kernel VAD size  : 0x00007f7ffd000000
+[MM   ] User VAD begin   : 0x0000000000001000
+[MM   ] User VAD end     : 0x00007f7fffffffff
+[MM   ] User VAD size    : 0x00007f7ffffff000
+[MM   ] PFN range #01[__x] begin : 0x0000000000080000
+[MM   ] PFN range #01[__x] end : 0x000000000008004b
+[MM   ] PFN range #01[__x] size : 0x000000000000004c
+[MM   ] PFN range #02[r__] begin : 0x000000000008004c
+[MM   ] PFN range #02[r__] end : 0x0000000000080055
+[MM   ] PFN range #02[r__] size : 0x000000000000000a
+[MM   ] PFN range #03[___] begin : 0x0000000000080056
+[MM   ] PFN range #03[___] end : 0x0000000000080057
+[MM   ] PFN range #03[___] size : 0x0000000000000002
+[MM   ] PFN range #04[rw_] begin : 0x0000000000080058
+[MM   ] PFN range #04[rw_] end : 0x00000000000800be
+[MM   ] PFN range #04[rw_] size : 0x0000000000000067
+[MM   ] PFN range #05[rw_] begin : 0x00000000000800bf
+[MM   ] PFN range #05[rw_] end : 0x00000000000800c9
+[MM   ] PFN range #05[rw_] size : 0x000000000000000b
+[MM   ] PFN range #06[rwx] begin : 0x00000000000800ca
+[MM   ] PFN range #06[rwx] end : 0x00000000000801c8
+[MM   ] PFN range #06[rwx] size : 0x00000000000000ff
+[MM   ] PFN range #07[rwx] begin : 0x00000000000801c9
+[MM   ] PFN range #07[rwx] end : 0x000000000008200b
+[MM   ] PFN range #07[rwx] size : 0x0000000000001e43
+[MM   ] PFN range #08[__x] begin : 0x000000000008200c
+[MM   ] PFN range #08[__x] end : 0x000000000008200c
+[MM   ] PFN range #08[__x] size : 0x0000000000000001
+[MM   ] PFN range #09[rwx] begin : 0x000000000008200d
+[MM   ] PFN range #09[rwx] end : 0x000000000008207f
+[MM   ] PFN range #09[rwx] size : 0x0000000000000073
+[MM   ] PFN range #10[rwx] begin : 0x0000000000082080
+[MM   ] PFN range #10[rwx] end : 0x0000000000082231
+[MM   ] PFN range #10[rwx] size : 0x00000000000001b2
+[MM   ] PFN range #11[rwx] begin : 0x0000000000082232
+[MM   ] PFN range #11[rwx] end : 0x00000000000dffff
+[MM   ] PFN range #11[rwx] size : 0x000000000005ddce
+[MM   ] Main range mapped begin : 0xffffc00006000000
+[MM   ] Main range mapped end : 0xffffc00006bfffff
+[MM   ] Main range mapped size : 0x0000000000c00000
+[MM   ] PFN DB size: 12288 KB
+[MM   ] PFN database created.
+[MM   ] Add PFN range begin : 0x0000000080dcf000
+[MM   ] Add PFN range end : 0x000000008200bfff
+[MM   ] Add PFN range size : 0x000000000123d000
+[MM   ] Add PFN range begin : 0x000000008200d000
+[MM   ] Add PFN range end : 0x000000008207ffff
+[MM   ] Add PFN range size : 0x0000000000073000
+[MM   ] Add PFN range begin : 0x0000000082232000
+[MM   ] Add PFN range end : 0x00000000dfffffff
+[MM   ] Add PFN range size : 0x000000005ddce000
+[MM   ] Atomic buddy object created (8 MB).
+[MM   ] Atomic PFN allocator initialized.
+[MM   ] kalloc allocator created.
+[MM   ] kmalloc/kfree initialized.
+[MM   ] Memory Manager successfully initialized.
+[PROF ] Profiler statistics initialized.
+[VMM  ] #PF handler was installed.
+[SMP  ] Initializing per-CPU areas...
+[SMP  ] per-CPU area size: 8320
+[SMP  ] full per-CPU areas size: 36864
+[UID  ] Uid allocator initialized.
+[SID  ] Sid allocator initialized.
+[IO   ] Initialize MMIO subsystem.
+[IO   ] Initialize DMA subsystem.
+[IO   ] Hardware interrupts successfully initialized.
+[IO   ] Resources registry initialized.
+[VMM  ] System address space initialized.
+[VMM  ] Internal VMM areas initialized.
+[TASK ] Task infrastructure initialized.
+[SMP  ] Idle thread for CPU #0 created.
+[SMP  ] Idle thread for CPU #1 created.
+[SMP  ] Idle thread for CPU #2 created.
+[SMP  ] Idle thread for CPU #3 created.
+[TASK ] Scheduler interrupts initialized.
+[TASK ] GSI page initialized.
+[HAL  ] cpu #2 - 1008MHz
+[HAL  ] cpu #1 - 1008MHz
+[HAL  ] cpu #3 - 1008MHz
+[SMP  ] CPU #1 - boostrapped.
+[SMP  ] CPU #2 - boostrapped.
+[SMP  ] CPU #3 - boostrapped.
+[PROF ] Profiler initialized.
+[TASK ] Multitasking infrastructure initialized.
+[TIME ] Time infrastructure initialized.
+[ROFS ] Files: 3, size: 1777664 (0x001b2000).
+[ROFS ] File #00: einit            - size:   751488 (0x000b7780)
+[ROFS ] File #01: Hello            - size:   745160 (0x000b5ec8)
+[ROFS ] File #02: ksm.module       - size:   274360 (0x00042fb8)
+[AUDIT] Starting core audit...
+[VLOG ] Virtual logging subsystem initialized.
+[VMM  ] Virtual Memory Manager service initialized.
+[IO   ] I/O subsystem successfully initialized.
+[FS   ] File System Manager successfully initialized.
+[XHCI ] XHCIDBG service initialized.
+[CM   ] Connection Manager successfully initialized.
+[KSM  ] Module: 'ksm.module' loaded.
+[KSM  ] Audit log created.
+[KSM  ] Module: 'ksm.module' initialized.
+[KSM  ] Server: 'kl.core.Core' executed.
+[KSM  ] Security system successfully initialized.
+[INIT ] Starting 'Einit' ...
+[INIT ] Starting system worker.
+Hello from KasperskyOS
+[INIT ] System worker finished
+[INIT ] System halted...
+System halted
+qemu-system-aarch64: terminating on signal 2
+make[3]: *** [einit/CMakeFiles/sim.dir/build.make:71: einit/CMakeFiles/sim] Interrupt
+make[2]: *** [CMakeFiles/Makefile2:484: einit/CMakeFiles/sim.dir/all] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:491: einit/CMakeFiles/sim.dir/rule] Interrupt
+make: *** [Makefile:338: sim] Interrupt
