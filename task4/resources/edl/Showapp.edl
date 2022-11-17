@@ -1,0 +1,5 @@
+entity mosquitto.Showapp
+
+components {
+    Showapp : mosquitto.Ping
+}
